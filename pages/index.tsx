@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import Script from "next/script";
-import { scrollToTop } from "../components";
+import { ScrollToTop } from "../components";
 
 export default function Home() {
   useEffect(() => {
@@ -754,14 +754,7 @@ export default function Home() {
       </div>
 
       {/* <!-- Back to top button --> */}
-      {/* <button
-        type="button"
-        className="btn btn-outline-primary btn-floating btn-lg"
-        id="btn-back-to-top"
-      >
-        <i className="fa fa-arrow-up"></i>
-      </button> */}
-      <scrollToTop />
+      <ScrollToTop />
       {/* <!-- Back to top button --> */}
 
       {/* <!-- Footer --> */}

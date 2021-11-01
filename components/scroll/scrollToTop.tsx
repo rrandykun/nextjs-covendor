@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export const scrollToTop = () => {
+export const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
@@ -31,7 +31,7 @@ export const scrollToTop = () => {
       type="button"
       className="btn btn-outline-primary btn-floating btn-lg"
       id="btn-back-to-top"
-      onClick={scrollToTop}
+      onClick={ScrollToTop}
       style={isVisible ? { display: "block" } : { display: "none" }}
     >
       <i className="fa fa-arrow-up"></i>
