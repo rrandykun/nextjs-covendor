@@ -5,6 +5,8 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
 import { ScrollToTop } from '../components';
+import Header from '../components/Header';
+import Navbar from '../components/Navbar';
 
 export default function Home() {
   useEffect(() => {
@@ -13,138 +15,8 @@ export default function Home() {
 
   return (
     <>
-      {/* <!-- Navbar pertama --> */}
-      <header>
-        <nav
-          className="navbar navbar-expand-lg navbar-store fixed-top navbar-fixed-top"
-          data-aos="fade-down"
-          style={{ zIndex: 3 }}
-        >
-          <div className="container">
-            <a href="index.html" className="navbar-brand">
-              <img src="images/logo-covendor.png" alt="Logo" width="200px" />
-            </a>
-
-            <div>
-              <ul className="navbar-nav ml-auto">
-                <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle text-black-50"
-                    href="http://example.com"
-                    id="navbarDropdownMenuLink"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    <i className="fa fa-user-circle mr-1" />
-                    Login
-                  </a>
-
-                  <div className="dropdown-menu p-3">
-                    <form className="form-horizontal" method="post">
-                      <input
-                        className="form-control login"
-                        type="text"
-                        name="username2"
-                        placeholder="Username"
-                      />
-                      <input
-                        className="form-control login"
-                        type="text"
-                        name="password2"
-                        placeholder="Password"
-                      />
-                      <input
-                        className="btn btn-primary text-white"
-                        type="button"
-                        name="submit"
-                        value="Login"
-                      />
-                    </form>
-                  </div>
-                </li>
-                <li className="nav-item active">
-                  <a
-                    href="register.html"
-                    className="btn btn-primary nav-link px-4 text-white"
-                  >
-                    Register
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-      {/* <!-- Navbar pertama --> */}
-
-      {/* <!-- Navbar kedua --> */}
-      <nav
-        className="navbar navbar-expand-lg navbar-light sticky-top-nav shadow-sm"
-        style={{ backgroundColor: '#f0f1fa', zIndex: 2 }}
-      >
-        <div className="container">
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon" />
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav">
-              <li className="nav-item active">
-                <a className="nav-link" href="/#">
-                  Home
-                  <span className="sr-only">(current)</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/#">
-                  Kategori 1
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/#">
-                  Kategori 2
-                </a>
-              </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="/#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Kategori 3
-                </a>
-                <div
-                  className="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <a className="dropdown-item" href="/#">
-                    Action
-                  </a>
-                  <a className="dropdown-item" href="/#">
-                    Another action
-                  </a>
-                  <a className="dropdown-item" href="/#">
-                    Something else here
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      {/* <!-- Navbar kedua --> */}
+      <Header />
+      <Navbar />
 
       <div className="page-content page-home">
         {/* <!-- Space Iklan 1 --> */}
@@ -759,11 +631,8 @@ export default function Home() {
         {/* <!-- Produk --> */}
       </div>
 
-      {/* <!-- Back to top button --> */}
       <ScrollToTop />
-      {/* <!-- Back to top button --> */}
 
-      {/* <!-- Footer --> */}
       <footer style={{ backgroundColor: '#f0f1fa' }}>
         <div className="container pt-5 pb-3">
           <div
@@ -914,7 +783,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-      {/* <!-- Footer --> */}
     </>
   );
 }
