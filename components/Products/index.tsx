@@ -6,12 +6,7 @@ import React, { useEffect } from 'react';
 export default function Products() {
   useEffect(() => {
     (async () => {
-      await axios.get('https://covendor-app.as.r.appspot.com/products', {
-        headers: {
-          'Access-Control-Allow-Origin': '*',
-          'Content-Type': 'application/json',
-        },
-      })
+      await axios.get('https://covendor-app.as.r.appspot.com/products')
         .then((response) => {
           console.log('data: ', response);
         })
