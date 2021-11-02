@@ -9,6 +9,7 @@ export default function Products() {
       await axios.get('https://covendor-app.as.r.appspot.com/products', {
         headers: {
           'Access-Control-Allow-Origin': '*',
+          'Content-Type': 'application/json',
         },
       })
         .then((response) => {
