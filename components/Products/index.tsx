@@ -4,17 +4,21 @@ import axios from 'axios';
 import React, { useEffect } from 'react';
 
 export default function Products() {
-  useEffect(async () => {
-    await axios.get('http://covendor-app.as.r.appspot.com/products', {
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-      }})
-      .then((response) => {
-        console.log('data: ', response);
+  useEffect(() => {
+    (async () => {
+      await axios.get('http://covendor-app.as.r.appspot.com/products', {
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+        },
       })
-      .catch((error) => {
-        console.log(error);
-      });
+        .then((response) => {
+          console.log('data: ', response);
+        })
+        .catch((error) => {
+          console.log(error);
+          console.log('haloo');
+        });
+    })();
   }, []);
 
   return (
