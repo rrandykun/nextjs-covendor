@@ -1,7 +1,22 @@
+/* eslint-disable no-console */
 /* eslint-disable no-use-before-define */
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect } from 'react';
 
 export default function Products() {
+  useEffect(async () => {
+    await axios.get('http://covendor-app.as.r.appspot.com/products', {
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+      }})
+      .then((response) => {
+        console.log('data: ', response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
   return (
     <>
       <section className="store-new-products">
