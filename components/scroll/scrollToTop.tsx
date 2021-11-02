@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react";
+/* eslint-disable no-shadow */
+/* eslint-disable import/prefer-default-export */
+import { useEffect, useState } from 'react';
 
 export const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -14,15 +16,15 @@ export const ScrollToTop = () => {
   const ScrollToTop = () => {
     window.scroll({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", toggleVisibility);
+    window.addEventListener('scroll', toggleVisibility);
 
     return () => {
-      window.removeEventListener("scroll", toggleVisibility);
+      window.removeEventListener('scroll', toggleVisibility);
     };
   }, []);
 
@@ -32,9 +34,9 @@ export const ScrollToTop = () => {
       className="btn btn-outline-primary btn-floating btn-lg"
       id="btn-back-to-top"
       onClick={ScrollToTop}
-      style={isVisible ? { display: "block" } : { display: "none" }}
+      style={isVisible ? { display: 'block' } : { display: 'none' }}
     >
-      <i className="fa fa-arrow-up"></i>
+      <i className="fa fa-arrow-up" />
     </button>
   );
 };

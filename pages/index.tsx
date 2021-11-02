@@ -1,7 +1,10 @@
-import { useEffect } from "react";
-import AOS from "aos";
-import Script from "next/script";
-import { ScrollToTop } from "../components";
+/* eslint-disable jsx-a11y/label-has-associated-control */
+/* eslint-disable import/extensions */
+/* eslint-disable import/no-unresolved */
+/* eslint-disable jsx-a11y/role-supports-aria-props */
+import { useEffect } from 'react';
+import AOS from 'aos';
+import { ScrollToTop } from '../components';
 
 export default function Home() {
   useEffect(() => {
@@ -33,7 +36,8 @@ export default function Home() {
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
-                    <i className="fa fa-user-circle mr-1"></i>Login
+                    <i className="fa fa-user-circle mr-1" />
+                    Login
                   </a>
 
                   <div className="dropdown-menu p-3">
@@ -77,7 +81,7 @@ export default function Home() {
       {/* <!-- Navbar kedua --> */}
       <nav
         className="navbar navbar-expand-lg navbar-light sticky-top-nav shadow-sm"
-        style={{ backgroundColor: "#f0f1fa", zIndex: 2 }}
+        style={{ backgroundColor: '#f0f1fa', zIndex: 2 }}
       >
         <div className="container">
           <button
@@ -89,29 +93,30 @@ export default function Home() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon" />
           </button>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item active">
-                <a className="nav-link" href="#">
-                  Home <span className="sr-only">(current)</span>
+                <a className="nav-link" href="/#">
+                  Home
+                  <span className="sr-only">(current)</span>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="/#">
                   Kategori 1
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="/#">
                   Kategori 2
                 </a>
               </li>
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  href="/#"
                   id="navbarDropdownMenuLink"
                   role="button"
                   data-toggle="dropdown"
@@ -124,13 +129,13 @@ export default function Home() {
                   className="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/#">
                     Action
                   </a>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/#">
                     Another action
                   </a>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/#">
                     Something else here
                   </a>
                 </div>
@@ -161,9 +166,9 @@ export default function Home() {
                       className="active"
                       data-target="#storeCarousel"
                       data-slide-to="0"
-                    ></li>
-                    <li data-target="#storeCarousel" data-slide-to="1"></li>
-                    <li data-target="#storeCarousel" data-slide-to="2"></li>
+                    />
+                    <li data-target="#storeCarousel" data-slide-to="1" />
+                    <li data-target="#storeCarousel" data-slide-to="2" />
                   </ol>
                   <div className="carousel-inner">
                     <div className="carousel-item active">
@@ -200,7 +205,7 @@ export default function Home() {
                     <span
                       className="carousel-control-prev-icon"
                       aria-hidden="true"
-                    ></span>
+                    />
                     <span className="sr-only">Previous</span>
                   </a>
                   <a
@@ -212,7 +217,7 @@ export default function Home() {
                     <span
                       className="carousel-control-next-icon"
                       aria-hidden="true"
-                    ></span>
+                    />
                     <span className="sr-only">Next</span>
                   </a>
                 </div>
@@ -226,12 +231,12 @@ export default function Home() {
         <section className="pencarian">
           <div className="container">
             <div className="row shadow rounded">
-              <div className="col-4 p-3" style={{ backgroundColor: "#f0f1fa" }}>
+              <div className="col-4 p-3" style={{ backgroundColor: '#f0f1fa' }}>
                 <ul className="list-unstyled">
                   <li data-toggle="collapse" data-target="#test">
                     <span>
-                      <i className="fa fa-tools text-success mr-1"></i>
-                      <a href="#" className="text-dark">
+                      <i className="fa fa-tools text-success mr-1" />
+                      <a href="/#" className="text-dark">
                         Forklift/ Material Handling
                       </a>
                     </span>
@@ -244,8 +249,8 @@ export default function Home() {
                   </li>
                   <li data-toggle="collapse" data-target="#test2">
                     <span>
-                      <i className="fa fa-cogs text-warning mr-1"></i>
-                      <a href="#" className="text-dark">
+                      <i className="fa fa-cogs text-warning mr-1" />
+                      <a href="/#" className="text-dark">
                         Construction Machinery
                       </a>
                     </span>
@@ -256,8 +261,8 @@ export default function Home() {
                   </li>
                   <li data-toggle="collapse" data-target="#test3">
                     <span>
-                      <i className="fa fa-industry text-info mr-1"></i>
-                      <a href="#" className="text-dark">
+                      <i className="fa fa-industry text-info mr-1" />
+                      <a href="/#" className="text-dark">
                         Industrial
                       </a>
                     </span>
@@ -270,8 +275,8 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div className="col-8 p-3" style={{ backgroundColor: "#fbfbff" }}>
-                <a href="#" style={{ textDecoration: "none" }}>
+              <div className="col-8 p-3" style={{ backgroundColor: '#fbfbff' }}>
+                <a href="/#" style={{ textDecoration: 'none' }}>
                   Transaction History
                 </a>
                 <form className="pt-4">
@@ -350,7 +355,8 @@ export default function Home() {
                       type="button"
                       className="btn btn-primary text-white ml-auto"
                     >
-                      <i className="fa fa-search"></i> Search
+                      <i className="fa fa-search" />
+                      Search
                     </button>
                   </div>
                 </form>
@@ -375,9 +381,9 @@ export default function Home() {
                       className="active"
                       data-target="#storeCarousel2"
                       data-slide-to="0"
-                    ></li>
-                    <li data-target="#storeCarousel2" data-slide-to="1"></li>
-                    <li data-target="#storeCarousel2" data-slide-to="2"></li>
+                    />
+                    <li data-target="#storeCarousel2" data-slide-to="1" />
+                    <li data-target="#storeCarousel2" data-slide-to="2" />
                   </ol>
                   <div className="carousel-inner">
                     <div className="carousel-item active">
@@ -414,7 +420,7 @@ export default function Home() {
                     <span
                       className="carousel-control-prev-icon"
                       aria-hidden="true"
-                    ></span>
+                    />
                     <span className="sr-only">Previous</span>
                   </a>
                   <a
@@ -426,7 +432,7 @@ export default function Home() {
                     <span
                       className="carousel-control-next-icon"
                       aria-hidden="true"
-                    ></span>
+                    />
                     <span className="sr-only">Next</span>
                   </a>
                 </div>
@@ -444,7 +450,7 @@ export default function Home() {
                 <h5>New arrivals</h5>
               </div>
               <div className="col-6 text-right" data-aos="fade-up">
-                <a href="#" style={{ textDecoration: "none" }}>
+                <a href="/#" style={{ textDecoration: 'none' }}>
                   See More
                 </a>
               </div>
@@ -460,9 +466,9 @@ export default function Home() {
                     <div
                       className="products-image"
                       style={{
-                        backgroundImage: `url("images/products/1.jpg`,
+                        backgroundImage: 'url(\'images/products/1.jpg\')',
                       }}
-                    ></div>
+                    />
                   </div>
                   <div className="products-text">
                     Spare part Forklift Engine
@@ -480,9 +486,9 @@ export default function Home() {
                     <div
                       className="products-image"
                       style={{
-                        backgroundImage: `url("/images/products/2.jpg`,
+                        backgroundImage: 'url(/images/products/2.jpg',
                       }}
-                    ></div>
+                    />
                   </div>
                   <div className="products-text">
                     Sparepart Forklift & Material Handling
@@ -500,9 +506,9 @@ export default function Home() {
                     <div
                       className="products-image"
                       style={{
-                        backgroundImage: `url("/images/products/3.jpg`,
+                        backgroundImage: 'url(/images/products/3.jpg',
                       }}
-                    ></div>
+                    />
                   </div>
                   <div className="products-text">
                     Sparepart Pompa Centrifugal
@@ -520,9 +526,9 @@ export default function Home() {
                     <div
                       className="products-image"
                       style={{
-                        backgroundImage: `url("/images/products/4.jpg`,
+                        backgroundImage: 'url("/images/products/4.jpg',
                       }}
-                    ></div>
+                    />
                   </div>
                   <div className="products-text">
                     OEM Timing Belt Red Rubber 25 AT10 PAZ 40-45SHA
@@ -540,9 +546,9 @@ export default function Home() {
                     <div
                       className="products-image"
                       style={{
-                        backgroundImage: `url("/images/products/5.jpg`,
+                        backgroundImage: 'url("/images/products/5.jpg',
                       }}
-                    ></div>
+                    />
                   </div>
                   <div className="products-text">HYDRAULIC PARTS A10VS045</div>
                   <div className="products-price">Rp 30.915</div>
@@ -558,9 +564,9 @@ export default function Home() {
                     <div
                       className="products-image"
                       style={{
-                        backgroundImage: `url("/images/products/6.jpg`,
+                        backgroundImage: 'url("/images/products/6.jpg',
                       }}
-                    ></div>
+                    />
                   </div>
                   <div className="products-text">
                     Optibelt Belt HVAC SK4 3V500
@@ -573,7 +579,7 @@ export default function Home() {
         </section>
         {/* <!-- Produk Baru --> */}
 
-        <div className="hl container"></div>
+        <div className="hl container" />
 
         {/* <!-- Produk --> */}
         <section className="store-new-products">
@@ -594,9 +600,9 @@ export default function Home() {
                     <div
                       className="products-image"
                       style={{
-                        backgroundImage: `url("/images/products/1.jpg`,
+                        backgroundImage: 'url(/images/products/1.jpg',
                       }}
-                    ></div>
+                    />
                   </div>
                   <div className="products-text">
                     Spare part Forklift Engine
@@ -614,9 +620,9 @@ export default function Home() {
                     <div
                       className="products-image"
                       style={{
-                        backgroundImage: `url("/images/products/2.jpg`,
+                        backgroundImage: 'url(/images/products/2.jpg',
                       }}
-                    ></div>
+                    />
                   </div>
                   <div className="products-text">
                     Sparepart Forklift & Material Handling
@@ -634,9 +640,9 @@ export default function Home() {
                     <div
                       className="products-image"
                       style={{
-                        backgroundImage: `url("/images/products/3.jpg`,
+                        backgroundImage: 'url("/images/products/3.jpg',
                       }}
-                    ></div>
+                    />
                   </div>
                   <div className="products-text">
                     Sparepart Pompa Centrifugal
@@ -654,9 +660,9 @@ export default function Home() {
                     <div
                       className="products-image"
                       style={{
-                        backgroundImage: `url("/images/products/4.jpg`,
+                        backgroundImage: 'url("/images/products/4.jpg',
                       }}
-                    ></div>
+                    />
                   </div>
                   <div className="products-text">
                     OEM Timing Belt Red Rubber 25 AT10 PAZ 40-45SHA
@@ -674,9 +680,9 @@ export default function Home() {
                     <div
                       className="products-image"
                       style={{
-                        backgroundImage: `url("/images/products/5.jpg`,
+                        backgroundImage: 'url("/images/products/5.jpg',
                       }}
-                    ></div>
+                    />
                   </div>
                   <div className="products-text">HYDRAULIC PARTS A10VS045</div>
                   <div className="products-price">Rp 30.915</div>
@@ -692,9 +698,9 @@ export default function Home() {
                     <div
                       className="products-image"
                       style={{
-                        backgroundImage: `url("/images/products/6.jpg`,
+                        backgroundImage: 'url("/images/products/6.jpg',
                       }}
-                    ></div>
+                    />
                   </div>
                   <div className="products-text">
                     Optibelt Belt HVAC SK4 3V500
@@ -712,9 +718,9 @@ export default function Home() {
                     <div
                       className="products-image"
                       style={{
-                        backgroundImage: `url("/images/products/7.jpg`,
+                        backgroundImage: 'url("/images/products/7.jpg',
                       }}
-                    ></div>
+                    />
                   </div>
                   <div className="products-text">OEM Drive Belt 75x2108</div>
                   <div className="products-price">Rp 292.700</div>
@@ -730,9 +736,9 @@ export default function Home() {
                     <div
                       className="products-image"
                       style={{
-                        backgroundImage: `url("/images/products/8.jpg`,
+                        backgroundImage: 'url("/images/products/8.jpg',
                       }}
-                    ></div>
+                    />
                   </div>
                   <div className="products-text">
                     Ammerral Belt Cap Cute Ronchi 2 - 7 x 188 cm
@@ -743,7 +749,7 @@ export default function Home() {
             </div>
             <div className="row justify-content-center">
               <div className="col-2" data-aos="fade-up">
-                <a href="#" className="btn btn-outline-primary nav-link">
+                <a href="/#" className="btn btn-outline-primary nav-link">
                   See More
                 </a>
               </div>
@@ -758,11 +764,11 @@ export default function Home() {
       {/* <!-- Back to top button --> */}
 
       {/* <!-- Footer --> */}
-      <footer style={{ backgroundColor: "#f0f1fa" }}>
+      <footer style={{ backgroundColor: '#f0f1fa' }}>
         <div className="container pt-5 pb-3">
           <div
             className="row justify content-center"
-            style={{ color: "#2d3170" }}
+            style={{ color: '#2d3170' }}
           >
             <div className="col-12">
               <div className="row">
@@ -779,36 +785,36 @@ export default function Home() {
                   <ul className="list-unstyled mt-4">
                     <li className="mb-2">
                       <a
-                        href="#"
+                        href="/#"
                         className="text-secondary"
-                        style={{ textDecoration: "none" }}
+                        style={{ textDecoration: 'none' }}
                       >
                         About Co-vendor
                       </a>
                     </li>
                     <li className="mb-2">
                       <a
-                        href="#"
+                        href="/#"
                         className="text-secondary"
-                        style={{ textDecoration: "none" }}
+                        style={{ textDecoration: 'none' }}
                       >
                         Press Release
                       </a>
                     </li>
                     <li className="mb-2">
                       <a
-                        href="#"
+                        href="/#"
                         className="text-secondary"
-                        style={{ textDecoration: "none" }}
+                        style={{ textDecoration: 'none' }}
                       >
                         Career
                       </a>
                     </li>
                     <li className="mb-2">
                       <a
-                        href="#"
+                        href="/#"
                         className="text-secondary"
-                        style={{ textDecoration: "none" }}
+                        style={{ textDecoration: 'none' }}
                       >
                         FAQ (Frequently Ask Question)
                       </a>
@@ -820,36 +826,36 @@ export default function Home() {
                   <ul className="list-unstyled mt-4">
                     <li className="mb-2">
                       <a
-                        href="#"
+                        href="/#"
                         className="text-secondary"
-                        style={{ textDecoration: "none" }}
+                        style={{ textDecoration: 'none' }}
                       >
                         Covendor Care
                       </a>
                     </li>
                     <li className="mb-2">
                       <a
-                        href="#"
+                        href="/#"
                         className="text-secondary"
-                        style={{ textDecoration: "none" }}
+                        style={{ textDecoration: 'none' }}
                       >
                         How To
                       </a>
                     </li>
                     <li className="mb-2">
                       <a
-                        href="#"
+                        href="/#"
                         className="text-secondary"
-                        style={{ textDecoration: "none" }}
+                        style={{ textDecoration: 'none' }}
                       >
                         Terms and Condition
                       </a>
                     </li>
                     <li className="mb-2">
                       <a
-                        href="#"
+                        href="/#"
                         className="text-secondary"
-                        style={{ textDecoration: "none" }}
+                        style={{ textDecoration: 'none' }}
                       >
                         Privacy
                       </a>
@@ -866,9 +872,10 @@ export default function Home() {
                         target="_blank"
                         title="WhatsApp"
                         className="text-secondary"
-                        style={{ textDecoration: "none" }}
+                        style={{ textDecoration: 'none' }}
                       >
-                        <i className="fab fa-whatsapp"></i>&nbsp;+62
+                        <i className="fab fa-whatsapp" />
+                        &nbsp;+62
                         852-3164-9227
                       </a>
                     </li>
@@ -877,9 +884,9 @@ export default function Home() {
                     </li>
                     <li className="mb-2">
                       <a
-                        href="#"
+                        href="/#"
                         className="text-secondary"
-                        style={{ textDecoration: "none" }}
+                        style={{ textDecoration: 'none' }}
                       >
                         Send Message
                       </a>
@@ -890,7 +897,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container-fluid" style={{ backgroundColor: "#2d3170" }}>
+        <div className="container-fluid" style={{ backgroundColor: '#2d3170' }}>
           <div
             className="
             row

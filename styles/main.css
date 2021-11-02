@@ -10849,11 +10849,11 @@ footer p {
 
 .navbar-store {
   padding-top: 15px;
-  background: #d3cce3;
+  background: white;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left bottom, left top, from(#e9e4f0), to(#d3cce3));
-  background: linear-gradient(to top, #e9e4f0, #d3cce3);
+  /* background: -webkit-gradient(linear, left bottom, left top, from(#e9e4f0), to(#d3cce3));
+  background: linear-gradient(to top, #e9e4f0, #d3cce3); */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -10887,14 +10887,14 @@ footer p {
 }
 
 .navbar-fixed-top.scrolled {
-  background: #d3cce3;
+  background: white;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left bottom, left top, from(#e9e4f0), to(#d3cce3));
+  /* background: -webkit-gradient(linear, left bottom, left top, from(#e9e4f0), to(#d3cce3));
   background: linear-gradient(to top, #e9e4f0, #d3cce3);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-transition: background-color 100ms linear;
-  transition: background-color 100ms linear;
+  /* -webkit-transition: background-color 100ms linear;
+  transition: background-color 100ms linear; */ 
 }
 
 .login {
