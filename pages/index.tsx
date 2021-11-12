@@ -2,13 +2,13 @@
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-unresolved */
 /* eslint-disable jsx-a11y/role-supports-aria-props */
-import { useEffect } from 'react';
-import AOS from 'aos';
-import { ScrollToTop } from '../components';
-import Header from '../components/Header';
-import Navbar from '../components/Navbar';
-import SectionCari from '../components/SectionCari';
-import Products from '../components/Products';
+import { useEffect } from "react";
+import AOS from "aos";
+import { ScrollToTop } from "../components";
+import Header from "../components/Header";
+import Navbar from "../components/Navbar";
+import SectionCari from "../components/SectionCari";
+import Products from "../components/Products";
 
 export default function Home() {
   useEffect(() => {
@@ -102,6 +102,7 @@ export default function Home() {
         {/* <!-- Space Iklan 1 --> */}
 
         <SectionCari />
+
         {/* <!-- Space Iklan 2 --> */}
         <section className="store-carousel py-4">
           <div className="container">
@@ -186,7 +187,7 @@ export default function Home() {
                 <h5>New arrivals</h5>
               </div>
               <div className="col-6 text-right" data-aos="fade-up">
-                <a href="/#" style={{ textDecoration: 'none' }}>
+                <a href="/#" style={{ textDecoration: "none" }}>
                   See More
                 </a>
               </div>
@@ -202,7 +203,7 @@ export default function Home() {
                     <div
                       className="products-image"
                       style={{
-                        backgroundImage: 'url(\'images/products/1.jpg\')',
+                        backgroundImage: "url('images/products/1.jpg')",
                       }}
                     />
                   </div>
@@ -222,7 +223,7 @@ export default function Home() {
                     <div
                       className="products-image"
                       style={{
-                        backgroundImage: 'url(/images/products/2.jpg',
+                        backgroundImage: "url(/images/products/2.jpg",
                       }}
                     />
                   </div>
@@ -242,7 +243,7 @@ export default function Home() {
                     <div
                       className="products-image"
                       style={{
-                        backgroundImage: 'url(/images/products/3.jpg',
+                        backgroundImage: "url(/images/products/3.jpg",
                       }}
                     />
                   </div>
@@ -324,11 +325,11 @@ export default function Home() {
 
       <ScrollToTop />
 
-      <footer style={{ backgroundColor: '#f0f1fa' }}>
+      <footer style={{ backgroundColor: "#f0f1fa" }}>
         <div className="container pt-5 pb-3">
           <div
             className="row justify content-center"
-            style={{ color: '#2d3170' }}
+            style={{ color: "#2d3170" }}
           >
             <div className="col-12">
               <div className="row">
@@ -347,7 +348,7 @@ export default function Home() {
                       <a
                         href="/#"
                         className="text-secondary"
-                        style={{ textDecoration: 'none' }}
+                        style={{ textDecoration: "none" }}
                       >
                         About Co-vendor
                       </a>
@@ -356,7 +357,7 @@ export default function Home() {
                       <a
                         href="/#"
                         className="text-secondary"
-                        style={{ textDecoration: 'none' }}
+                        style={{ textDecoration: "none" }}
                       >
                         Press Release
                       </a>
@@ -365,7 +366,7 @@ export default function Home() {
                       <a
                         href="/#"
                         className="text-secondary"
-                        style={{ textDecoration: 'none' }}
+                        style={{ textDecoration: "none" }}
                       >
                         Career
                       </a>
@@ -374,7 +375,7 @@ export default function Home() {
                       <a
                         href="/#"
                         className="text-secondary"
-                        style={{ textDecoration: 'none' }}
+                        style={{ textDecoration: "none" }}
                       >
                         FAQ (Frequently Ask Question)
                       </a>
@@ -388,7 +389,7 @@ export default function Home() {
                       <a
                         href="/#"
                         className="text-secondary"
-                        style={{ textDecoration: 'none' }}
+                        style={{ textDecoration: "none" }}
                       >
                         Covendor Care
                       </a>
@@ -397,7 +398,7 @@ export default function Home() {
                       <a
                         href="/#"
                         className="text-secondary"
-                        style={{ textDecoration: 'none' }}
+                        style={{ textDecoration: "none" }}
                       >
                         How To
                       </a>
@@ -406,7 +407,7 @@ export default function Home() {
                       <a
                         href="/#"
                         className="text-secondary"
-                        style={{ textDecoration: 'none' }}
+                        style={{ textDecoration: "none" }}
                       >
                         Terms and Condition
                       </a>
@@ -415,7 +416,7 @@ export default function Home() {
                       <a
                         href="/#"
                         className="text-secondary"
-                        style={{ textDecoration: 'none' }}
+                        style={{ textDecoration: "none" }}
                       >
                         Privacy
                       </a>
@@ -432,11 +433,10 @@ export default function Home() {
                         target="_blank"
                         title="WhatsApp"
                         className="text-secondary"
-                        style={{ textDecoration: 'none' }}
+                        style={{ textDecoration: "none" }}
                       >
                         <i className="fab fa-whatsapp" />
-                        &nbsp;+62
-                        852-3164-9227
+                        &nbsp;+62 852-3164-9227
                       </a>
                     </li>
                     <li className="mb-2 text-secondary">
@@ -446,7 +446,7 @@ export default function Home() {
                       <a
                         href="/#"
                         className="text-secondary"
-                        style={{ textDecoration: 'none' }}
+                        style={{ textDecoration: "none" }}
                       >
                         Send Message
                       </a>
@@ -457,7 +457,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container-fluid" style={{ backgroundColor: '#2d3170' }}>
+        <div className="container-fluid" style={{ backgroundColor: "#2d3170" }}>
           <div
             className="
             row
