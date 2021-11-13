@@ -38,6 +38,7 @@ export default function Products() {
               return (
                 <ProductItem
                   key={item.id}
+                  productNo={item.part_no}
                   productName={item.nama}
                   productPrice={item.price}
                 />

@@ -5,12 +5,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export interface ProductItemProps {
+  productNo: string;
   productName: string;
   productPrice: string;
 }
 
 export default function ProductItem(props: ProductItemProps) {
-  const { productName, productPrice } = props;
+  const { productNo, productName, productPrice } = props;
   return (
     <>
       <div
@@ -28,8 +29,16 @@ export default function ProductItem(props: ProductItemProps) {
                 alt="thumbnail"
               />
             </div>
-            <div className="products-text">{productName}</div>
-            <div className="products-price">{productPrice}</div>
+            <div className="products-text">
+              <span className="font-weight-bold">{productNo}</span>
+              {' '}
+              {productName.toLowerCase()}
+            </div>
+            <div className="products-price">
+              Rp.
+              {' '}
+              {productPrice}
+            </div>
           </a>
         </Link>
       </div>
