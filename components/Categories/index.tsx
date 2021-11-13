@@ -15,7 +15,7 @@ export default function Categories(props: CategoryProps) {
   useEffect(() => {
     (async () => {
       await axios
-        .get('http://13.213.212.135/categories')
+        .get('https://13.213.212.135/categories')
         .then((response) => {
           // console.log('data: ', response.data);
           setLevelList(response.data.filter((lvl: any) => lvl.level === 1));
