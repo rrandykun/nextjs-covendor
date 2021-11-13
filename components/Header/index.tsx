@@ -57,12 +57,13 @@ export default function Header() {
                   </div>
                 </li>
                 <li className="nav-item active">
-                  <a
-                    href="register.html"
-                    className="btn btn-primary nav-link px-4 text-white"
-                  >
-                    Register
-                  </a>
+                  <Link href="/register">
+                    <a
+                      className="btn btn-primary nav-link px-4 text-white"
+                    >
+                      Register
+                    </a>
+                  </Link>
                 </li>
               </ul>
             </div>

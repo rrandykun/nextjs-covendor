@@ -56,46 +56,67 @@ export default function Detail() {
                 Brand : Mitsubishi
               </p>
               <hr />
-              <p>
-                <strong>Price </strong>
-                :
-                {' '}
-                <span className="text-danger">Rp. 100.000</span>
-                / unit
-                {' '}
-                <span className="text-black-50">(tax not included)</span>
-              </p>
-              <p>
-                <strong>Quantity</strong>
-                :
-                {' '}
-              </p>
-              <div className="input-group plus-minus-input">
-                <div className="input-group-button">
-                  <button
-                    type="button"
-                    className="button hollow circle"
-                    data-quantity="minus"
-                    data-field="quantity"
-                  >
-                    <i className="fa fa-minus" aria-hidden="true"></i>
-                  </button>
+              <div className="row">
+                <div className="col-6">
+                  <p>
+                    <strong>Price </strong>
+                    :
+                    {' '}
+                    <span className="text-danger">Rp. 100.000</span>
+                    / unit
+                    {' '}
+                    <span className="text-black-50">(tax not included)</span>
+                    <br />
+                  </p>
+                  <p>
+                    <strong>Quantity </strong>
+                    :
+                  </p>
+                  <div className="input-group plus-minus-input">
+                    <div className="input-group-button">
+                      <button
+                        type="button"
+                        className="button hollow circle"
+                        data-quantity="minus"
+                        data-field="quantity"
+                      >
+                        <i className="fa fa-minus" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <input
+                      className="input-group-field"
+                      type="number"
+                      name="quantity"
+                      value="0"
+                    />
+                    <div className="input-group-button">
+                      <button
+                        type="button"
+                        className="button hollow circle"
+                        data-quantity="plus"
+                        data-field="quantity"
+                      >
+                        <i className="fa fa-plus" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
                 </div>
-                <input
-                  className="input-group-field"
-                  type="number"
-                  name="quantity"
-                  value="0"
-                />
-                <div className="input-group-button">
-                  <button
-                    type="button"
-                    className="button hollow circle"
-                    data-quantity="plus"
-                    data-field="quantity"
-                  >
-                    <i className="fa fa-plus" aria-hidden="true"></i>
-                  </button>
+                <div className="col-6">
+                  <strong>Supplier </strong>
+                  :
+                  {' '}
+                  CV. ABC
+                  <br />
+                  <strong>Stock </strong>
+                  :
+                  {' '}
+                  100
+                  <br />
+                  <strong>Product Reference </strong>
+                  :
+                  {' '}
+                  SKU0006900
+                  <br />
                 </div>
               </div>
               <div className="row mt-3">
@@ -107,12 +128,20 @@ export default function Detail() {
                     <span className="text-danger">Rp. 100.000</span>
                   </p>
                 </div>
-                <div className="col-4">
+                <div className="col-3">
+                  <a
+                    href="/#"
+                    className="btn btn-outline-primary nav-link px-4"
+                  >
+                    Add to Cart
+                  </a>
+                </div>
+                <div className="col-3">
                   <a
                     href="/#"
                     className="btn btn-primary nav-link px-4 text-white"
                   >
-                    Add to Cart
+                    Buy
                   </a>
                 </div>
               </div>
