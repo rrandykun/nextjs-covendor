@@ -1,6 +1,10 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-use-before-define */
 /* eslint-disable jsx-a11y/role-supports-aria-props */
 import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import Home from '../../pages';
 
 export default function Header() {
   return (
@@ -12,16 +16,17 @@ export default function Header() {
           style={{ zIndex: 3 }}
         >
           <div className="container">
-            <a href="index.html" className="navbar-brand">
-              <img src="images/logo-covendor.png" alt="Logo" width="200px" />
-            </a>
-
+            <Link href="/">
+              <a className="navbar-brand">
+                <img src="/images/logo-covendor.png" alt="Logo" width="200px" />
+              </a>
+            </Link>
             <div>
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item dropdown">
                   <a
                     className="nav-link dropdown-toggle text-black-50"
-                    href="http://example.com"
+                    href="/#"
                     id="navbarDropdownMenuLink"
                     data-toggle="dropdown"
                     aria-haspopup="true"

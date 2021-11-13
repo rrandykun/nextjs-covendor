@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export interface ProductItemProps {
   productName: string;
@@ -15,18 +16,20 @@ export default function ProductItem(props: ProductItemProps) {
         data-aos="fade-up"
         data-aos-delay="100"
       >
-        <a href="details.html" className="component-products d-block">
-          <div className="products-thumbnail">
-            <Image
-              className="products-image"
-              src="https://via.placeholder.com/150"
-              layout="fill"
-              alt="thumbnail"
-            />
-          </div>
-          <div className="products-text">{productName}</div>
-          <div className="products-price">{productPrice}</div>
-        </a>
+        <Link href="/products/detail">
+          <a className="component-products d-block">
+            <div className="products-thumbnail">
+              <Image
+                className="products-image"
+                src="https://via.placeholder.com/150"
+                layout="fill"
+                alt="thumbnail"
+              />
+            </div>
+            <div className="products-text">{productName}</div>
+            <div className="products-price">{productPrice}</div>
+          </a>
+        </Link>
       </div>
     </>
   );

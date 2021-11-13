@@ -1,8 +1,23 @@
+/* eslint-disable arrow-body-style */
 /* eslint-disable no-use-before-define */
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import Categories from '../Categories';
 
 export default function SectionCari() {
+  const [categoryList, setCategoryList] = useState([]);
+  useEffect(async () => {
+    const response = await axios
+      .get('https://covendor-app.as.r.appspot.com/categories')
+      .then((response) => {
+        console.log('data: ', response.data);
+        setCategoryList(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  });
   return (
     <>
       <section className="pencarian">
@@ -10,46 +25,21 @@ export default function SectionCari() {
           <div className="row shadow rounded">
             <div className="col-4 p-3" style={{ backgroundColor: '#f0f1fa' }}>
               <ul className="list-unstyled">
-                <li data-toggle="collapse" data-target="#test">
-                  <span>
-                    <i className="fa fa-tools text-success mr-1" />
-                    <a href="/#" className="text-dark">
-                      Forklift/ Material Handling
-                    </a>
-                  </span>
-                  <ul className="collapse" id="test">
-                    <li>Mitsubishi</li>
-                    <li>Toyota</li>
-                    <li>TCM</li>
-                    <li>Caterpillar</li>
-                  </ul>
-                </li>
-                <li data-toggle="collapse" data-target="#test2">
-                  <span>
-                    <i className="fa fa-cogs text-warning mr-1" />
-                    <a href="/#" className="text-dark">
-                      Construction Machinery
-                    </a>
-                  </span>
-                  <ul className="collapse" id="test2">
-                    <li>Komatsu</li>
-                    <li>Caterpillar</li>
-                  </ul>
-                </li>
-                <li data-toggle="collapse" data-target="#test3">
-                  <span>
-                    <i className="fa fa-industry text-info mr-1" />
-                    <a href="/#" className="text-dark">
-                      Industrial
-                    </a>
-                  </span>
-                  <ul className="collapse" id="test3">
-                    <li>Bearing</li>
-                    <li>Belt</li>
-                    <li>Filter</li>
-                    <li>Seal</li>
-                  </ul>
-                </li>
+                {categoryList.map((item) => {
+                  return (
+                    <Categories
+                      key={item.id}
+                      name={item.category_name}
+                      id={item.id}
+                      icon={item.icon}
+                    />
+                  );
+                })}
+                <Categories
+                  name="Construction Machinery"
+                  id="1"
+                  icon="fa fa-industry text-info"
+                />
               </ul>
             </div>
             <div className="col-8 p-3" style={{ backgroundColor: '#fbfbff' }}>
@@ -58,9 +48,7 @@ export default function SectionCari() {
               </a>
               <form className="pt-4">
                 <div className="form-group">
-                  <label htmlFor="exampleFormControlInput1">
-                    Part Number
-                  </label>
+                  <label htmlFor="exampleFormControlInput1">Part Number</label>
                   <input
                     type="email"
                     className="form-control"
@@ -70,10 +58,7 @@ export default function SectionCari() {
                 </div>
                 Filter
                 <div className="form-group row pl-3 mt-2">
-                  <label
-                    htmlFor="exampleFormControlSelect1"
-                    className="col-2"
-                  >
+                  <label htmlFor="exampleFormControlSelect1" className="col-2">
                     Type
                   </label>
                   <select
@@ -89,10 +74,7 @@ export default function SectionCari() {
                   </select>
                 </div>
                 <div className="form-group row pl-3">
-                  <label
-                    htmlFor="exampleFormControlSelect1"
-                    className="col-2"
-                  >
+                  <label htmlFor="exampleFormControlSelect1" className="col-2">
                     Brand
                   </label>
                   <select
@@ -108,10 +90,7 @@ export default function SectionCari() {
                   </select>
                 </div>
                 <div className="form-group row pl-3">
-                  <label
-                    htmlFor="exampleFormControlSelect1"
-                    className="col-2"
-                  >
+                  <label htmlFor="exampleFormControlSelect1" className="col-2">
                     Location
                   </label>
                   <select

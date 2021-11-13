@@ -17,7 +17,6 @@ export default function Products() {
         })
         .catch((error) => {
           console.log(error);
-          console.log('haloo');
         });
     })();
   }, []);
@@ -41,6 +40,7 @@ export default function Products() {
                 />
               );
             })}
+            <ProductItem productName="Mobil" productPrice="Rp. 1.000.000" />
           </div>
 
           <div className="row justify-content-center">
