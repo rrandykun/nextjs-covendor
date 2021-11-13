@@ -9,20 +9,20 @@ import React, { useEffect, useState } from 'react';
 import ProductItem from './ProductItem';
 
 export default function Products() {
-  const [productList, setProductList] = useState([]);
-  // useEffect(() => {
-  //   (async () => {
-  //     await axios
-  //       .get('https://13.213.212.135/products')
-  //       .then((response) => {
-  //         console.log('data: ', response.data);
-  //         setProductList(response.data);
-  //       })
-  //       .catch((error) => {
-  //         console.log(error);
-  //       });
-  //   })();
-  // }, []);
+  const [productList, setProductList] = useState([] as any[]);
+  useEffect(() => {
+    (async () => {
+      await axios
+        .get('http://13.213.212.135/products')
+        .then((response) => {
+          console.log('data: ', response.data);
+          setProductList(response.data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    })();
+  }, []);
 
   return (
     <>
@@ -34,7 +34,7 @@ export default function Products() {
             </div>
           </div>
           <div className="row">
-            {/* {productList.map((item) => {
+            {productList.map((item) => {
               return (
                 <ProductItem
                   key={item.id}
@@ -42,8 +42,7 @@ export default function Products() {
                   productPrice={item.price}
                 />
               );
-            })} */}
-            <ProductItem productName="Mobil" productPrice="Rp. 1.000.000" />
+            })}
           </div>
 
           <div className="row justify-content-center">
