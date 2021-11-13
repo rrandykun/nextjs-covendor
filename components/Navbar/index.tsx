@@ -1,5 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-use-before-define */
 import React from 'react';
+import Link from 'next/link';
 
 export default function Navbar() {
   return (
@@ -29,14 +31,18 @@ export default function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/#">
-                  Kategori 1
-                </a>
+                <Link href="/products">
+                  <a className="nav-link">
+                    Kategori 1
+                  </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/#">
-                  Kategori 2
-                </a>
+                <Link href="/products">
+                  <a className="nav-link">
+                    Kategori 2
+                  </a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
                 <a

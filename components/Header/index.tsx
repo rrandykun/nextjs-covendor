@@ -10,7 +10,6 @@ export default function Header() {
       <header>
         <nav
           className="navbar navbar-expand-lg navbar-store fixed-top navbar-fixed-top"
-          data-aos="fade-down"
           style={{ zIndex: 3 }}
         >
           <div className="container">

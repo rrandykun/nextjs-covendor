@@ -1,8 +1,10 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-unresolved */
 /* eslint-disable jsx-a11y/role-supports-aria-props */
 import { useEffect } from 'react';
+import Link from 'next/link';
 import AOS from 'aos';
 import { ScrollToTop } from '../components';
 import Header from '../components/Header';
@@ -198,118 +200,130 @@ export default function Home() {
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                <a href="details.html" className="component-products d-block">
-                  <div className="products-thumbnail">
-                    <div
-                      className="products-image"
-                      style={{
-                        backgroundImage: "url('images/products/1.jpg')",
-                      }}
-                    />
-                  </div>
-                  <div className="products-text">
-                    Spare part Forklift Engine
-                  </div>
-                  <div className="products-price">Rp 1.000.000</div>
-                </a>
+                <Link href="/products/detail">
+                  <a className="component-products d-block">
+                    <div className="products-thumbnail">
+                      <div
+                        className="products-image"
+                        style={{
+                          backgroundImage: "url('images/products/1.jpg')",
+                        }}
+                      />
+                    </div>
+                    <div className="products-text">
+                      Spare part Forklift Engine
+                    </div>
+                    <div className="products-price">Rp 1.000.000</div>
+                  </a>
+                </Link>
               </div>
               <div
                 className="col-6 col-md-4 col-lg-2 products-card"
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                <a href="details.html" className="component-products d-block">
-                  <div className="products-thumbnail">
-                    <div
-                      className="products-image"
-                      style={{
-                        backgroundImage: 'url(/images/products/2.jpg',
-                      }}
-                    />
-                  </div>
-                  <div className="products-text">
-                    Sparepart Forklift & Material Handling
-                  </div>
-                  <div className="products-price">Rp 1.000.000</div>
-                </a>
+                <Link href="/products/detail">
+                  <a className="component-products d-block">
+                    <div className="products-thumbnail">
+                      <div
+                        className="products-image"
+                        style={{
+                          backgroundImage: 'url(/images/products/2.jpg',
+                        }}
+                      />
+                    </div>
+                    <div className="products-text">
+                      Sparepart Forklift & Material Handling
+                    </div>
+                    <div className="products-price">Rp 1.000.000</div>
+                  </a>
+                </Link>
               </div>
               <div
                 className="col-6 col-md-4 col-lg-2 products-card"
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
-                <a href="details.html" className="component-products d-block">
-                  <div className="products-thumbnail">
-                    <div
-                      className="products-image"
-                      style={{
-                        backgroundImage: 'url(/images/products/3.jpg',
-                      }}
-                    />
-                  </div>
-                  <div className="products-text">
-                    Sparepart Pompa Centrifugal
-                  </div>
-                  <div className="products-price">Rp 900.000</div>
-                </a>
+                <Link href="/products/detail">
+                  <a className="component-products d-block">
+                    <div className="products-thumbnail">
+                      <div
+                        className="products-image"
+                        style={{
+                          backgroundImage: 'url(/images/products/3.jpg',
+                        }}
+                      />
+                    </div>
+                    <div className="products-text">
+                      Sparepart Pompa Centrifugal
+                    </div>
+                    <div className="products-price">Rp 900.000</div>
+                  </a>
+                </Link>
               </div>
               <div
                 className="col-6 col-md-4 col-lg-2 products-card"
                 data-aos="fade-up"
                 data-aos-delay="400"
               >
-                <a href="details.html" className="component-products d-block">
-                  <div className="products-thumbnail">
-                    <div
-                      className="products-image"
-                      style={{
-                        backgroundImage: 'url("/images/products/4.jpg',
-                      }}
-                    />
-                  </div>
-                  <div className="products-text">
-                    OEM Timing Belt Red Rubber 25 AT10 PAZ 40-45SHA
-                  </div>
-                  <div className="products-price">Rp 3.915.600</div>
-                </a>
+                <Link href="/products/detail">
+                  <a className="component-products d-block">
+                    <div className="products-thumbnail">
+                      <div
+                        className="products-image"
+                        style={{
+                          backgroundImage: 'url("/images/products/4.jpg',
+                        }}
+                      />
+                    </div>
+                    <div className="products-text">
+                      OEM Timing Belt Red Rubber 25 AT10 PAZ 40-45SHA
+                    </div>
+                    <div className="products-price">Rp 3.915.600</div>
+                  </a>
+                </Link>
               </div>
               <div
                 className="col-6 col-md-4 col-lg-2 products-card"
                 data-aos="fade-up"
                 data-aos-delay="500"
               >
-                <a href="details.html" className="component-products d-block">
-                  <div className="products-thumbnail">
-                    <div
-                      className="products-image"
-                      style={{
-                        backgroundImage: 'url("/images/products/5.jpg',
-                      }}
-                    />
-                  </div>
-                  <div className="products-text">HYDRAULIC PARTS A10VS045</div>
-                  <div className="products-price">Rp 30.915</div>
-                </a>
+                <Link href="/products/detail">
+                  <a className="component-products d-block">
+                    <div className="products-thumbnail">
+                      <div
+                        className="products-image"
+                        style={{
+                          backgroundImage: 'url("/images/products/5.jpg',
+                        }}
+                      />
+                    </div>
+                    <div className="products-text">HYDRAULIC PARTS A10VS045</div>
+                    <div className="products-price">Rp 30.915</div>
+                  </a>
+                </Link>
               </div>
               <div
                 className="col-6 col-md-4 col-lg-2 products-card"
                 data-aos="fade-up"
                 data-aos-delay="600"
               >
-                <a href="details.html" className="component-products d-block">
-                  <div className="products-thumbnail">
-                    <div
-                      className="products-image"
-                      style={{
-                        backgroundImage: 'url("/images/products/6.jpg',
-                      }}
-                    />
-                  </div>
-                  <div className="products-text">
-                    Optibelt Belt HVAC SK4 3V500
-                  </div>
-                  <div className="products-price">Rp 90.915</div>
-                </a>
+                <Link href="/products/detail">
+                  <a className="component-products d-block">
+                    <div className="products-thumbnail">
+                      <div
+                        className="products-image"
+                        style={{
+                          backgroundImage: 'url("/images/products/6.jpg',
+                        }}
+                      />
+                    </div>
+                    <div className="products-text">
+                      Optibelt Belt HVAC SK4 3V500
+                    </div>
+                    <div className="products-price">Rp 90.915</div>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>

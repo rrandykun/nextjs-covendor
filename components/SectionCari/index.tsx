@@ -6,6 +6,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
 import Categories from '../Categories';
 
 export default function SectionCari() {
@@ -111,14 +112,16 @@ export default function SectionCari() {
                   </select>
                 </div>
                 <div className="input-group row">
-                  <button
-                    id="search-button"
-                    type="button"
-                    className="btn btn-primary text-white ml-auto"
-                  >
-                    <i className="fa fa-search" />
-                    Search
-                  </button>
+                  <Link href="/products" passHref>
+                    <button
+                      id="search-button"
+                      type="button"
+                      className="btn btn-primary text-white ml-auto"
+                    >
+                      <i className="fa fa-search" />
+                      Search
+                    </button>
+                  </Link>
                 </div>
               </form>
             </div>

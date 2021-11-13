@@ -17,8 +17,6 @@ export default function Detail() {
       <Navbar />
       <section
         className="store-breadcrumbs"
-        data-aos="fade-down"
-        data-aos-delay="100"
       >
         <div className="container">
           <div className="row">
@@ -31,7 +29,7 @@ export default function Detail() {
                     </Link>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
-                    Product Details
+                    Product Detail
                   </li>
                 </ol>
               </nav>
