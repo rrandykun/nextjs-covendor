@@ -13,7 +13,7 @@ export default function Products() {
   useEffect(() => {
     (async () => {
       await axios
-        .get('http://13.213.212.135/products')
+        .get('https://13.213.212.135/products')
         .then((response) => {
           console.log('data: ', response.data);
           setProductList(response.data);
