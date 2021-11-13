@@ -189,17 +189,29 @@ export default function Detail() {
                   >
                     <div className="card-body">
                       <p>
-                        Dimensi Produk (p x l x t) (30 x 20 x 5 ) cm
+                        <strong>Dimensi Produk (p x l x t)</strong>
+                        {' '}
+                        (30 x 20 x 5 ) cm
                         <br />
-                        Dimensi Kemasan (p x l x t) (35 x 10 x 10 ) cm
+                        <strong>Dimensi Kemasan (p x l x t)</strong>
+                        {' '}
+                        (35 x 10 x 10 ) cm
                         <br />
-                        Berat Produk 1 kg
+                        <strong>Berat Produk</strong>
+                        {' '}
+                        1 kg
                         <br />
-                        Berat Kemasan 1 kg
+                        <strong>Berat Kemasan</strong>
+                        {' '}
+                        1 kg
                         <br />
-                        Model ADSL2+
+                        <strong>Model</strong>
+                        {' '}
+                        ADSL2+
                         <br />
-                        Warna Hitam
+                        <strong>Warna</strong>
+                        {' '}
+                        Hitam
                       </p>
                     </div>
                   </div>
