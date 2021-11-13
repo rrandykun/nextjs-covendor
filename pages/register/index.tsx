@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable no-use-before-define */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useEffect, useState } from 'react';
@@ -5,7 +6,7 @@ import Image from 'next/image';
 import axios from 'axios';
 
 export default function Register() {
-  const [provList, setProvList] = useState([]);
+  const [provList, setProvList] = useState([] as any[]);
   useEffect(() => {
     (async () => {
       await axios

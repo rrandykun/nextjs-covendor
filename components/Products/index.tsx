@@ -10,19 +10,19 @@ import ProductItem from './ProductItem';
 
 export default function Products() {
   const [productList, setProductList] = useState([]);
-  useEffect(() => {
-    (async () => {
-      await axios
-        .get('https://covendor-app.as.r.appspot.com/products')
-        .then((response) => {
-          console.log('data: ', response.data);
-          setProductList(response.data);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    })();
-  }, []);
+  // useEffect(() => {
+  //   (async () => {
+  //     await axios
+  //       .get('https://13.213.212.135/products')
+  //       .then((response) => {
+  //         console.log('data: ', response.data);
+  //         setProductList(response.data);
+  //       })
+  //       .catch((error) => {
+  //         console.log(error);
+  //       });
+  //   })();
+  // }, []);
 
   return (
     <>

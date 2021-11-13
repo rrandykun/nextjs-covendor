@@ -73,28 +73,30 @@ export default function Product() {
                 </article>
                 <article className="card-group-item">
                   <header className="card-header">
-                    <h6 className="title">Choose type </h6>
+                    <h6 className="title">Area </h6>
                   </header>
                   <div className="filter-content">
                     <div className="card-body">
-                      <label className="form-check">
-                        <input className="form-check-input" type="radio" name="exampleRadio" value="" />
-                        <span className="form-check-label">
-                          First hand items
-                        </span>
-                      </label>
-                      <label className="form-check">
-                        <input className="form-check-input" type="radio" name="exampleRadio" value="" />
-                        <span className="form-check-label">
-                          Brand new items
-                        </span>
-                      </label>
-                      <label className="form-check">
-                        <input className="form-check-input" type="radio" name="exampleRadio" value="" />
-                        <span className="form-check-label">
-                          Some other option
-                        </span>
-                      </label>
+                      <form>
+                        <label className="form-check">
+                          <input className="form-check-input" type="checkbox" value="" />
+                          <span className="form-check-label">
+                            Mitsubishi
+                          </span>
+                        </label>
+                        <label className="form-check">
+                          <input className="form-check-input" type="checkbox" value="" />
+                          <span className="form-check-label">
+                            Toyota
+                          </span>
+                        </label>
+                        <label className="form-check">
+                          <input className="form-check-input" type="checkbox" value="" />
+                          <span className="form-check-label">
+                            Another Brand
+                          </span>
+                        </label>
+                      </form>
                     </div>
                   </div>
                 </article>

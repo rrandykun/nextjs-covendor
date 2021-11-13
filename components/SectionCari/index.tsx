@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable no-unused-vars */
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-unresolved */
@@ -10,14 +11,15 @@ import Link from 'next/link';
 import Categories from '../Categories';
 
 export default function SectionCari() {
-  const [categoryList, setCategoryList] = useState([]);
+  const [categoryList, setCategoryList] = useState([] as any[]);
   useEffect(() => {
     (async () => {
       await axios
-        .get('https://covendor-app.as.r.appspot.com/categories')
+        .get('http://13.213.212.135/categories')
         .then((response) => {
-          console.log('data: ', response.data);
-          setCategoryList(response.data);
+          // console.log('data: ', response.data);
+          setCategoryList(response.data.filter((lvl: any) => lvl.level === 0));
+          // console.log(level);
         })
         .catch((error) => {
           console.log(error);
@@ -31,7 +33,7 @@ export default function SectionCari() {
           <div className="row shadow rounded">
             <div className="col-4 p-3" style={{ backgroundColor: '#f0f1fa' }}>
               <ul className="list-unstyled">
-                {/* {categoryList.map((item) => {
+                {categoryList.map((item) => {
                   return (
                     <Categories
                       key={item.id}
@@ -40,12 +42,7 @@ export default function SectionCari() {
                       icon={item.icon}
                     />
                   );
-                })} */}
-                <Categories
-                  name="Construction Machinery"
-                  id="1"
-                  icon="fa fa-industry text-info"
-                />
+                })}
               </ul>
             </div>
             <div className="col-8 p-3" style={{ backgroundColor: '#fbfbff' }}>

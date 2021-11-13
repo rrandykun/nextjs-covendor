@@ -107,6 +107,11 @@ export default function Detail() {
                   {' '}
                   CV. ABC
                   <br />
+                  <strong>City </strong>
+                  :
+                  {' '}
+                  Kota Malang
+                  <br />
                   <strong>Stock </strong>
                   :
                   {' '}
