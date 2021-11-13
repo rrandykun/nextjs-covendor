@@ -4,7 +4,10 @@ import React from 'react';
 export default function Navbar() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light sticky-top-nav shadow-sm" style={{ backgroundColor: '#f0f1fa', zIndex: 2 }}>
+      <nav
+        className="navbar navbar-expand-lg navbar-light sticky-top-nav shadow-sm"
+        style={{ backgroundColor: '#f0f1fa', zIndex: 2 }}
+      >
         <div className="container">
           <button
             className="navbar-toggler"

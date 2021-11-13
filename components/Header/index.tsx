@@ -2,9 +2,7 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable jsx-a11y/role-supports-aria-props */
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
-import Home from '../../pages';
 
 export default function Header() {
   return (

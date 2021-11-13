@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/self-closing-comp */
 /* eslint-disable no-use-before-define */
 /* eslint-disable import/extensions */
@@ -8,7 +9,6 @@ import Image from 'next/image';
 import Header from '../../../components/Header';
 import Navbar from '../../../components/Navbar';
 import { ScrollToTop } from '../../../components';
-import styles from '../../../styles/ProductDetail.module.css';
 
 export default function Detail() {
   return (
@@ -59,12 +59,18 @@ export default function Detail() {
               </p>
               <hr />
               <p>
-                <strong>Price </strong>:{' '}
-                <span className="text-danger">Rp. 100.000</span>/ unit{' '}
+                <strong>Price </strong>
+                :
+                {' '}
+                <span className="text-danger">Rp. 100.000</span>
+                / unit
+                {' '}
                 <span className="text-black-50">(tax not included)</span>
               </p>
               <p>
-                <strong>Quantity</strong> :{' '}
+                <strong>Quantity</strong>
+                :
+                {' '}
               </p>
               <div className="input-group plus-minus-input">
                 <div className="input-group-button">
@@ -97,7 +103,9 @@ export default function Detail() {
               <div className="row mt-3">
                 <div className="col">
                   <p>
-                    <strong>Total </strong>:{' '}
+                    <strong>Total </strong>
+                    :
+                    {' '}
                     <span className="text-danger">Rp. 100.000</span>
                   </p>
                 </div>

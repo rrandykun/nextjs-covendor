@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/extensions */
+/* eslint-disable import/no-unresolved */
 /* eslint-disable arrow-body-style */
 /* eslint-disable no-console */
 /* eslint-disable no-use-before-define */
@@ -31,7 +34,7 @@ export default function Products() {
             </div>
           </div>
           <div className="row">
-            {productList.map((item) => {
+            {/* {productList.map((item) => {
               return (
                 <ProductItem
                   key={item.id}
@@ -39,7 +42,7 @@ export default function Products() {
                   productPrice={item.price}
                 />
               );
-            })}
+            })} */}
             <ProductItem productName="Mobil" productPrice="Rp. 1.000.000" />
           </div>
 

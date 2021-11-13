@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/extensions */
+/* eslint-disable import/no-unresolved */
 /* eslint-disable arrow-body-style */
 /* eslint-disable no-use-before-define */
 /* eslint-disable jsx-a11y/label-has-associated-control */
@@ -7,17 +10,19 @@ import Categories from '../Categories';
 
 export default function SectionCari() {
   const [categoryList, setCategoryList] = useState([]);
-  useEffect(async () => {
-    const response = await axios
-      .get('https://covendor-app.as.r.appspot.com/categories')
-      .then((response) => {
-        console.log('data: ', response.data);
-        setCategoryList(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  });
+  useEffect(() => {
+    (async () => {
+      await axios
+        .get('https://covendor-app.as.r.appspot.com/categories')
+        .then((response) => {
+          console.log('data: ', response.data);
+          setCategoryList(response.data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    })();
+  }, []);
   return (
     <>
       <section className="pencarian">
@@ -25,7 +30,7 @@ export default function SectionCari() {
           <div className="row shadow rounded">
             <div className="col-4 p-3" style={{ backgroundColor: '#f0f1fa' }}>
               <ul className="list-unstyled">
-                {categoryList.map((item) => {
+                {/* {categoryList.map((item) => {
                   return (
                     <Categories
                       key={item.id}
@@ -34,7 +39,7 @@ export default function SectionCari() {
                       icon={item.icon}
                     />
                   );
-                })}
+                })} */}
                 <Categories
                   name="Construction Machinery"
                   id="1"
