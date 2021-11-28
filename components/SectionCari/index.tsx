@@ -15,7 +15,7 @@ export default function SectionCari() {
   useEffect(() => {
     (async () => {
       await axios
-        .get('https://13.213.212.135/categories')
+        .get('https://covendor.ddns.net/categories')
         .then((response) => {
           // console.log('data: ', response.data);
           setCategoryList(response.data.filter((lvl: any) => lvl.level === 0));
