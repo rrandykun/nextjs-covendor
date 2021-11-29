@@ -49,7 +49,7 @@ export default function Detail() {
               />
             </div>
             <div className="col-8">
-              <h3>Spare part Forklift Engine</h3>
+              <h3>Spare part Forklift Engine </h3>
               <p>
                 Part No: SKU0006744
                 <br />
