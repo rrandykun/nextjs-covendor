@@ -15,7 +15,7 @@ export default function SectionCari() {
   useEffect(() => {
     (async () => {
       await axios
-        .get('https://covendor.ddns.net/categories')
+        .get('https://api.co-vendor.com/categories')
         .then((response) => {
           // console.log('data: ', response.data);
           setCategoryList(response.data.filter((lvl: any) => lvl.level === 0));

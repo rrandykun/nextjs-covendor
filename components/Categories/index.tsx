@@ -15,7 +15,7 @@ export default function Categories(props: CategoryProps) {
   useEffect(() => {
     (async () => {
       await axios
-        .get('https://covendor.ddns.net/categories')
+        .get('https://api.co-vendor.com/categories')
         .then((response) => {
           // console.log('data: ', response.data);
           setLevelList(response.data.filter((lvl: any) => lvl.level === 1));

@@ -13,7 +13,7 @@ export default function Products() {
   useEffect(() => {
     (async () => {
       await axios
-        .get('https://covendor.ddns.net/products')
+        .get('https://api.co-vendor.com/products')
         .then((response) => {
           console.log('data: ', response.data);
           setProductList(response.data);

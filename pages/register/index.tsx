@@ -10,7 +10,7 @@ export default function Register() {
   useEffect(() => {
     (async () => {
       await axios
-        .get('https://dev.farizdotid.com/api/daerahindonesia/provinsi')
+        .get('https://api.co-vendor.com/address/provinces')
         .then((response) => {
           console.log('data: ', response.data.provinsi);
           setProvList(response.data.provinsi);
