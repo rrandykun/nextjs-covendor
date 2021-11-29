@@ -12,9 +12,8 @@ export default function Register() {
       await axios
         .get('https://api.co-vendor.com/address/provinces')
         .then((response) => {
-          console.log('data: ', response.data.provinsi);
-          setProvList(response.data.provinsi);
-          console.log(typeof provList);
+          console.log('data: ', response.data);
+          setProvList(response.data);
         })
         .catch((error) => {
           console.log(error);
@@ -54,7 +53,7 @@ export default function Register() {
                     <select id="inputState" className="form-control">
                       <option selected>Choose...</option>
                       {provList.map((item) => (
-                        <option id={item.id}>{item.nama}</option>
+                        <option id={item.prov_id}>{item.prov_name}</option>
                       ))}
                     </select>
                   </div>
@@ -63,7 +62,7 @@ export default function Register() {
                     <select id="inputCity" className="form-control">
                       <option selected>Choose...</option>
                       {provList.map((item) => (
-                        <option id={item.id}>{item.nama}</option>
+                        <option id={item.prov_id}>{item.prov_name}</option>
                       ))}
                     </select>
                   </div>
